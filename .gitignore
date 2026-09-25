@@ -1,0 +1,14 @@
+# Data Postgres (jangan ikut di-commit, isinya besar & berubah tiap running)
+postgresql-data/
+
+# File OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Python cache (nanti muncul waktu develop module)
+__pycache__/
+*.pyc
+
+# Environment/secrets kalau nanti ada file .env
+.env

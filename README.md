@@ -136,9 +136,6 @@ Screenshot alur utama tersedia di folder [`/screenshots`](./screenshots):
 - eCommerce Checkout
 - Custom Module Development
 
-## 🎥 Video Demo
-
-[Link video demo] — menunjukkan alur end-to-end dari CRM hingga custom module development.
 
 ## 📝 Catatan Pembelajaran
 
@@ -151,7 +148,7 @@ Beberapa kendala teknis yang ditemukan dan solusinya selama pengerjaan project i
 
 ## 👤 Author
 
-[Nama Kamu] — Mahasiswa Informatika, project portofolio pembelajaran Odoo ERP
+M.Sultonun Naim, project portofolio pembelajaran Odoo ERP
 
 ## 📄 License
 

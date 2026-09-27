@@ -1,0 +1,46 @@
+<odoo>
+    <record id="view_nusantara_event_registration_form" model="ir.ui.view">
+        <field name="name">nusantara.event.registration.form</field>
+        <field name="model">nusantara.event.registration</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <field name="partner_id"/>
+                        <field name="registration_date"/>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+<record id="view_nusantara_event_registration_list" model="ir.ui.view">
+    <field name="name">nusantara.event.registration.list</field>
+    <field name="model">nusantara.event.registration</field>
+    <field name="arch" type="xml">
+        <list>
+            <header>
+                <button name="%(action_confirm_registration_wizard)d" type="action" string="Konfirmasi Terpilih"/>
+            </header>
+            <field name="name"/>
+            <field name="email"/>
+            <field name="registration_date"/>
+        </list>
+    </field>
+</record>
+    <record id="action_nusantara_event_registration" model="ir.actions.act_window">
+        <field name="name">Pendaftaran Event</field>
+        <field name="res_model">nusantara.event.registration</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_nusantara_root" name="Nusantara Kreatif"/>
+    <menuitem id="menu_nusantara_event_registration"
+              name="Pendaftaran Event"
+              parent="menu_nusantara_root"
+              action="action_nusantara_event_registration"/>
+</odoo>

@@ -1,0 +1,22 @@
+<odoo>
+    <record id="view_confirm_registration_wizard" model="ir.ui.view">
+        <field name="name">nusantara.confirm.registration.wizard.form</field>
+        <field name="model">nusantara.confirm.registration.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="message" readonly="1"/>
+                <footer>
+                    <button name="action_confirm" type="object" string="Konfirmasi" class="btn-primary"/>
+                    <button string="Batal" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_confirm_registration_wizard" model="ir.actions.act_window">
+        <field name="name">Konfirmasi Pendaftaran</field>
+        <field name="res_model">nusantara.confirm.registration.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

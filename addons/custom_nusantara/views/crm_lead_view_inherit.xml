@@ -1,0 +1,12 @@
+<odoo>
+    <record id="crm_lead_view_form_inherit_nusantara" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.nusantara</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <field name="tag_ids" position="after">
+                <field name="nusantara_event_registration_id"/>
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,1 @@
+from . import confirm_registration_wizard
